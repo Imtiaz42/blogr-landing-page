@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* font-family: 'Overpass', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body{
+  overflow-x: hidden;
+}
+
+header{
+  height: 100vh;
+  width: 100vw;
+  background: url('./images/bg-pattern-intro.svg'),linear-gradient(to top left, #ff3d54, #ff8f70);
+  border-bottom-left-radius: 56px;
+}
+
+nav{
+  padding: 2.7rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.none{
+  display: none;
+}
+
+.nav-links{
+  display: block;
+  background-color: white;
+  padding: 1rem;
+  width: 80vw;
+  border-radius: 6px;
+  position: absolute;
+  top: 95px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+ul{
+  list-style: none;
+}
+
+ ul li{
+  margin-top: 1rem;
+}
+
+ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+nav ul li:hover .sub-links{
+  display: block;
+}
+
+nav .sub-links{
+  display: none;
+  background-color: #fafafa;
+  padding: 1rem;
+}
+
+hr{
+  margin: 1.3rem;
+  color: #fafafa;
+}
+
+.sign-up{
+  text-align: center;
+}
+
+.btn-1{
+ border: none;
+ outline: none;
+ background-color: white;
+ font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-2{
+  border: none;
+  outline: none;
+  padding: .7rem 1.6rem;
+  background-color: #ff8f70;
+  margin-top: 1rem;
+  border-radius: 24px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.heading{
+  text-align: center;
+  padding: 3rem;
+  color: white;
+}
+
+.heading h1{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.heading p{
+  padding: 1rem 0;
+}
+
+.buttons .btn-2{
+  background-color: white;
+  color: #ff3d54;
+  padding: 0.5rem 1rem;
+}
+
+.buttons .btn-1{
+  background-color: transparent;
+  border: 1px solid white;
+  padding: .5rem 1rem;
+  border-radius: 24px;
+  color: white;
+}
+
+
+/*   About section    */
+
+main{
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.container{
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.image-container img{
+  width: 100%;
+  max-width: 640px;
+}
+
+.text-container{
+  margin-top: 1.3rem;
+}
+
+.text-container p{
+  line-height: 1.5;
+  margin: 1.5rem 0;
+}
+
+
+/*    cell phone      */
+
+.phone-image img{
+  width: 100%;
+  max-width: 425px;
+  position: absolute;
+  top: -171px;
+  left: 0;
+}
+
+.cell-phone{
+  border-radius: 0 56px;
+  padding: 2rem;
+  background-image: url('./images/bg-pattern-circles.svg');
+  background-repeat: no-repeat; 
+  background-position: 10px;
+  background-size: cover;
+  background-color: hsl(237, 17%, 21%);
+  position: relative;
+  height: 80vh;
+  margin-top: 12rem;
+}
+
+.phone-text{
+  color: white;
+  text-align: center;
+  padding-top: 11rem;
+}
+
+.phone-text p{
+  line-height: 1.3;
+  margin-top: 1rem;
+}
+/*    cell phone ends here   */
+
+section .container{
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/*    footer    */
+
+footer{
+  background-color: hsl(237, 17%, 21%);
+  text-align: center;
+  border-top-right-radius: 66px;
+  padding: 2.5rem 0;
+
+}
+
+footer ul li a{
+  color: white;
+}
+
+#li{
+  margin-top: 3.5rem;
+}
+
+footer .sub-links{
+  margin-top: 1.5rem;
+  color: #fafafa;
+}
+
+footer .sub-links a{
+  color: #c8c8cb;
+  font-size: 15px;
+}
+
+
+@media (min-width:425px) {
+  .phone-image img {
+    top: -222px;
+}
+}
+
+@media (min-width:608px) {
+  .phone-image img {
+    top: 0px;
+    left: 20%;
+    transform: translateY(-50%);
+}
+}
+
+@media (min-width:768px){
+  #open-menu
+  ,br
+  ,hr{
+   display: none;  /*  hamburger icon */
+  }
+
+  .none{
+    display: flex;
+    align-items: center;
+    gap: 9rem;
+  }
+
+  .heading{
+    margin-top: 3rem;
+  }
+
+  .heading p{
+    font-size: 16px;
+  }
+
+  nav ul{
+    display: flex;
+    gap: 1rem;
+  }
+
+  #li{
+    margin-top: 1rem;
+  }
+
+  ul li a{
+    color: white;
+  }
+
+  .btn-lg-1{
+    background-color: transparent;
+    color: white;
+  }
+
+  .btn-lg-2{
+    background-color: white;
+    color: #ff3d54;
+  }
+
+  .heading h1{
+    font-size: 50px;
+  }
+
+  /*    About section   */
+  .container{
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .text-container{
+    width: 100%;
+    text-align: start;
+  }
+
+
+  /*    Cell Phone image container  */
+
+  .cell-phone{
+    display: flex;
+    height: 40vh;
+  }
+
+  .phone-image img{
+    position: static;
+    transform: translateY(-28%);
+  }
+
+  .phone-text{
+    padding-top: 0;
+    text-align: left;
+  }
+
+  footer{
+    display: flex;
+    padding: 3rem;
+    gap: 4rem;
+    text-align: center;
+  }
+
+  footer > ul{
+    display: flex;
+    gap: 8rem;
+  }
+
+}
